@@ -215,7 +215,7 @@ class PointCloud:
         points = view_points(self.points[:3, :], view, normalize=False)
         ax.scatter(points[0, :], points[1, :], c=self.points[color_channel, :], s=marker_size)
         ax.set_xlim(left=x_lim[0], right=x_lim[1])
-        ax.set_ylim(left=y_lim[0], right=y_lim[1])
+        ax.set_ylim(top=y_lim[0], bottom=y_lim[1])
 
 
 class Box:
